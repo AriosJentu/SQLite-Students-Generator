@@ -47,7 +47,7 @@ for i in range(len(subjs)):
 
 for i in range(1, studcount+1):
 	fullname = generate_random_name()
-	cursor.execute("INSERT INTO Students VALUES (%i, '%s', '%.2i-%.2i-%i', %i);"%( i, fullname, randrange(1, 30), randrange(1, 12+1), randrange(1995, 2000), randrange(len(groups))+1) )
+	cursor.execute("INSERT INTO Students VALUES (%i, '%s', '%.4i-%.2i-%.2i', %i);"%( i, fullname, randrange(1995, 2000), randrange(1, 12+1), randrange(1, 30), randrange(len(groups))+1) )
 
 for i in range(1, 100001):
 	st_id = randrange(i%100 + 1, studcount+1)
